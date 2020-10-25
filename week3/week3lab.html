@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo List</title>
+</head>
+<body>  
+    <h1>Todo list</h1>
+    <ul id="list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+    <input type="text" placeholder="add task" id="inpt">
+    <button id="btn">Add task</button>
+
+    <script>
+     let list = document.getElementById("list");
+    let button = document.getElementById("btn")
+    let input = document.getElementById("inpt")
+    let taskArray = ["task1","task2","task3"]
+    button.addEventListener("click",()=>{
+        let newTask = document.createElement("li")
+        newTask.innerHTML = input.value
+        taskArray.push(newTask.innerHTML);
+        list.appendChild(newTask)
+        // for(let i = 0;i<taskArray.length;i++){
+        //     taskArray
+        // }
+    });
+
+    </script>
+</body>
+
+</html>

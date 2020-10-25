@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "name": "CST3145-learn-git",
+            "path": "CST3145-learn-git"
+        },
+        {
+            "path": "week4"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "CST3145-learn-git"
+    }
+}

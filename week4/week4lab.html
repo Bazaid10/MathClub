@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After School Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<style>
+    /* .row{
+        display: flex;
+    } */
+    .image-figure{
+        width:50%;
+    }
+
+     .image-figure img {
+        float: left;
+        width: 100px;
+        margin-right: 30px;
+    }
+.course-description{
+    width:50%;
+}
+    p {
+        font-weight: bold;
+    }
+    
+</style>
+
+<body>
+    <div id="app">
+        <h1>After School Club</h1>
+        <div class="row">
+            <figure class="image-figure">
+                <img :src=image_source alt=" Subject Image">
+            </figure>
+            <div class="course-description">
+                <h2 v-text="course.subject"></h2>
+                <p v-text="course.location"></p>
+                <p>Price: {{course.price}}</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data:
+            {
+                image_source: "course_image.png",
+                course: {
+                    subject: "Math",
+                    location: "London",
+                    price: 1000,
+
+
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
