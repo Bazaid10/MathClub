@@ -28,7 +28,7 @@
             <p>Number of spaces: {{product.availableInventory - cartItemCount}}</p>
             <button v-on:click='addToCart' v-if='canAddToCart'>Add to cart</button>
             <button disabled="disabled" v-else>Add to cart</button>
-
+             
             </div>
             <div v-else>
                 <h2>Checkout</h2>
