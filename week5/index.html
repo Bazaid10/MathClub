@@ -46,9 +46,27 @@
                     <strong>Last Name:</strong>
                     <input type="text" v-model="order.lastName">
                 </p>
+                <p><strong>Address:</strong> <input type="text" v-model="order.address"></p>
+                <p><strong>City:</strong> <input type="text" v-model="order.city"></p>
+                <p>
+                    <strong>State:</strong>
+                    <select v-model="order.state" id="">
+                        <option disabled value="">State</option>
+                        <option >AL</option>
+                        <option >AR</option>
+                        <option >CA</option>
+                        <option >NV</option>
+                    </select>
+                </p>
+                <p><strong>ZIP/Postal Code:</strong> <input type="text" v-model="order.zip"></p>
+
                 <h2>Order Information:</h2>
                 <p>First name : {{order.firstName}}</p>
                 <p>Last name : {{order.lastName}}</p>
+                <p>Address : {{order.address}}</p>
+                <p>City : {{order.city}}</p>
+                <p>Zip Code : {{order.zip}}</p>
+                <p>State : {{order.state}}</p>
             </div>
         </main>
     </div>
@@ -66,6 +84,10 @@
                     price: 2000,
                     image: "images/1.jpg",
                     availableInventory: 5
+                },
+                order:{
+                    firstName: "",
+                    lastName: ""
                 },
                 cart: []
             },
