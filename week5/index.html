@@ -38,6 +38,17 @@
             </div>
             <div v-else>
                 <h2>Checkout</h2>
+                <p>
+                    <strong>First Name:</strong>
+                    <input type="text" v-model="order.firstName">
+                </p>
+                <p>
+                    <strong>Last Name:</strong>
+                    <input type="text" v-model="order.lastName">
+                </p>
+                <h2>Order Information:</h2>
+                <p>First name : {{order.firstName}}</p>
+                <p>Last name : {{order.lastName}}</p>
             </div>
         </main>
     </div>
