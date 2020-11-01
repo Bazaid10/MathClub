@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-for wihout key</title>
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="state in states">{{state}}</li>
+        </ol>
+    </div>
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data:{
+                states: ["Alabama","Arizona","California","Nevada"]
+            }
+        })
+    </script>
+</body>
+</html>
