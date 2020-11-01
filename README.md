@@ -1,2 +1,0 @@
-# MathClub
-GROUP LAB TASK
